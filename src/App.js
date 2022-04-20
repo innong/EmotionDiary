@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes , Route} from 'react-router-dom';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import RoutTest from './components/RouteTest';
 
 import Home from './pages/Home';
 import Diary from './pages/Diary';
 import New from './pages/New';
 import Edit from './pages/Edit';
-
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route path="/edit" element={<Edit />} />
           <Route path="/diary" element={<Diary />} />
         </Routes>
+        <RoutTest />
       </div>
     </BrowserRouter>
   );
