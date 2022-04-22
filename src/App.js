@@ -79,7 +79,7 @@ function App() {
   return (
     <DiaryStateContext.Provider value={data}>
       <DiaryDispatchContext.Provider 
-      vluae ={{
+      value ={{
         onCreate,
         onEdit,
         onRemove,
