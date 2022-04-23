@@ -25,76 +25,112 @@ body {
 }
 
 #root {
-  background-color:white;
-  box-shadow: rgba(100,100,111,0.2) 0px 7px 20px 0px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
 }
 
 .App {
-  min-height:100vh;
+  min-height: 100vh;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 /*  MyButton  */
 .MyButton {
-  cursor:pointer;
-  border:none;
-  border-radius:5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 
-  padding-top : 10px;
+  padding-top: 10px;
   padding-bottom: 10px;
-  padding-left : 20px;
+  padding-left: 20px;
   padding-right: 20px;
 
-  font-size : 18px;
+  font-size: 18px;
 
-  white-space : nowrap;
-  font-family : "Nanum Pen Script";
+  white-space: nowrap;
+  font-family: "Nanum Pen Script";
 }
 
-.MyButton_default{
-  background-color:#ececec;
-  color:black;
+.MyButton_default {
+  background-color: #ececec;
+  color: black;
 }
-.MyButton_positive{
+
+.MyButton_positive {
   background-color: #64c964;
-  color : white;
+  color: white;
 }
-.MyButton_negative{
+
+.MyButton_negative {
   background-color: #fd565f;
-  color : white;
+  color: white;
 }
 
 /* HEADER */
 header {
-  padding-top : 20px;
+  padding-top: 20px;
   padding-bottom: 20px;
 
-  display : flex;
+  display: flex;
   align-item: center;
   border-bottom: 1px solid #e2d2d2;
 }
 
-header > div {
-  display : flex;
+header>div {
+  display: flex;
 }
 
 header .head_text {
-  width : 50%;
-  font-size:25px;
+  width: 50%;
+  font-size: 25px;
   justify-content: center;
 }
 
 header .head_btn_left {
-  width : 25%;
+  width: 25%;
   justify-content: start;
 }
 
 header .head_btn_right {
-  width : 25%;
+  width: 25%;
   justify-content: end;
 }
 
 header button {
-  font-family : "Nanum Pen Script";
+  font-family: "Nanum Pen Script";
+}
+
+
+/* DiaryList */
+.DiaryList .menu_wrapper {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.DiaryList .menu_wrapper .right_col {
+  flex-grow: 1;
+}
+
+.DiaryList .menu_wrapper .right_col button {
+  width:100%;
+}
+
+.DiaryList .ControlMenu {
+  margin-right :10px;
+  border:none;
+  border-radius :5px;
+  background-color: #ececec;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  cursor :pointer;
+  font-family: "Nanum Pen Script";
+  font-size: 18px;
 }
